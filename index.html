@@ -7,17 +7,33 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-            <nav class="hero__navigation">
-                <img class="navigation__logo" src="./img/Logo.png" alt="Missed"/>
-            </nav>
-        </header>
+    <header class="header">
+        <nav class="header__nav">
+            <img class="header__logo" src="./img/Logo.png" alt="Missed">
+
+            <ul class="nav">
+                <li class="nav__item"><a class="nav__link">Home</a></li>
+                <li class="nav__item"><a class="nav__link">Portfolio</a></li>
+                <li class="nav__item"><a class="nav__link">Skills</a></li>
+                <li class="nav__item"><a class="nav__link">About Me</a></li>
+            </ul>
+
+            <div class="theme">
+            <div class="theme__switch"></div>
+            <a class="theme__contact">Contact Me</a>
+            </div>
+        </nav>
+    </header>
+
     <main>
         <section class="hero">
-            <h1 class="hero__title"></h1>
-            <h2 class="hero__name"></h2>
-            <ol class="hero__links"></ol>
-            <button class="hero__download-CV"></button>
+            <div class="hero__bar">
+                <div class="hero__description">
+                    <h1 class="hero__title">PRODUCT DESIGNER</h1>
+                </div>
+                <img class="hero__portal" src="./img/Portal.svg" alt="Missed">
+            </div>
+            <img class="hero__img" src="./img/heroImage.jpg" alt="Missed">
         </section>
     </main>
 
