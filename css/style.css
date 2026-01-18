@@ -4,105 +4,450 @@
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: white;
     height: 100vh;
+    font-family: 'Inter', sans-serif;
+    width: 1440px;
+}
+
+.text--style{
+    font-size: 14px;
+    line-height: 20px;
+    color: #717171;
+}
+
+.title--style{
+    line-height: 44px;
+    color: #4D4D4D;  
+    font-size: 36px;
+ 
+}
+
+.under-title--style{
+    font-size: 16px;
+    line-height: 24px;
+    color: #717171
+}
+
+.button--design{
+    background-color: #4CAF4F;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    color: white;
+
+}
+
+.header--button{
+    font-size: 14px;
+    height: 44px;
+}
+
+.title--under{
+    color: #4CAF4F;
+}
+
+.logos--style{
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    list-style-type: none;
+}
+
+.partner--box{
+    width: 299px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__community-partner--logo{
+    width: 65px;
+    height: 56px;
+}
+
+.home__community-partner--icon{
+    width: 267px;
+    height: 144px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__community-partner--company{
+    width: 267px;
+    height: 72px;
+    color: #4D4D4D;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.home__community-partner--about{
+    width: 251px;
+    max-height: 80px;
+    text-align: center;
 }
 
 .header__nav {
     width: 100%;
-    height: 120px;
+    height: 84px;
     display: flex;
-    justify-content: space-between;
-    padding: 50px 100px 30px;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+
 }
 
 .header__logo {
-    width: 73px;
-    height: 27px;
+    width: 155px;
+    height: 24px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }
 
-.nav {
+.header__logo-title{
+    width: 111.49px;
+    height: 20.66px;
+    fill: black;
+    font-size: 23px;
+}
+
+.header__menu{
+    height: 24px;
+    width: 588px;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.header__login{
+    width: 182px;
+    height: 44px;
+    display: flex;
+    gap: 14px;
+}
+
+.header__login-login{
+    width: 77px;
+    padding: 10 20px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    color: #4CAF4F;
+}
+
+
+
+.header__login-sign{
+    width: 91px;
+}
+
+
+
+.home{
+    height: 1285px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.home__hero{
+    height: 599px;
+    width: 100%;
+    display: flex;
+    gap: 104px;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__hero-description{
+    width: 657px;
+    height: 276px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.home__hero-title-block{
+    width: 100%;
+    height: 192px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.home__title{
+    font-size: 64px;
+    color: #4D4D4D;
+    line-height: 76px;
+}
+
+
+
+
+.hero__title-button{
+    width: 128px;
+    height: 52px;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.home__hero-illustration{
+    width: 391px;
+    height: 407px;
+    image-rendering: auto;
+    object-fit: cover;
+}
+
+
+.home__clients{
+    width: 100%;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.home__clients-description{
+    width: 1110px;
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.home__clients-logos{
+    width: 1152px;
+    height: 98px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home__clients-title{
+    line-height: 36px;
+}
+
+
+.home__community{
+    width: 100%;
+    height: 416px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__community-description{
+    width: 100%;
+    height: 120px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__community-title{
+    width: 543px;
+    height: 88px;
+    text-align: center;
+}
+
+.home__community-title-description{
+    width: 100%;
+    height: 24px;
+    text-align: center;
+}
+
+.home__clients-explantation{
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.home__community-partner1{
+    height: 260px;
+}
+
+.home__community-partner2{
+    height: 280px;
+}
+
+.body{
+    width: 100%;
+    height: 2242.4px;
+    margin-top: 41.8px;
+    display: flex;
+    gap: 48px;
+    flex-direction: column;
+
+}
+
+.body__head{
+    width: 100%;
+    height: 433px;
+    position: relative;
+}
+
+.body__head-img{
+    width: 441.53px;
+    height: 328.99px;
+    position: absolute;
+    top: 52px;
+    left: 218.5px;
+}
+
+.body__head-pixelgrade{
+    position: absolute;
+    top: 82.5px;
+    left: 635px;
+    width: 661px;
+    height: 268px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.body__head-pixelgrade-about{
+    width: 601px;
+    height: 184px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.body__head-pixelgrade-text{
+    width: 601px;
+    height: 80px;
+}
+
+.body__head-pixelgrade-button{
+    width: 151px;
+    height: 52px;
+}
+
+.body__achievements{
+    width: 100%;
+    height: 288px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.body__achievements-heading{
+    width: 540px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.body__achievements-text{
+    color: #18191F;   
+}
+
+.body__achievements-counts{
+    width: 540px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.body__achievements--row{
+    width: 100%;
+    height: 60px;
     display: flex;
     gap: 30px;
-    list-style: none;
-    font-size: 20px;
-    letter-spacing: -5%;
 }
 
-.nav__item {
-    cursor: pointer;  
-}
-
-.nav__link {
-    color: white;
-    text-decoration: none;
-}
-
-.theme {
+.body__achievements--box{
+    width: 255px;
+    height: 100%;
     display: flex;
-    gap: 20px;
-    align-items: center;
+    gap: 16px;
 }
 
-.theme__switch {
-    width: 56px;
-    height: 32px;
-    border-radius: 32px;
-    padding: 4px;
-    background-color: azure;
+.body__achievements--icon{
+    width: 48px;
+    height: 48px;
 }
 
-.theme__contact {
-    width: 133px;
-    height: 40px;
-    border-radius: 4px;
+.body__achievements--values{
+    font-size: 28px;
+}
+
+.body__achievements--service{
+    line-height: 24px;
+}
+
+.body__calender{
+    width: 100%;
+    height: 433.4px;
     display: flex;
     align-items: center;
-    font-size: 16px;
-    letter-spacing: -5%;
+    justify-content: space-evenly;
 }
 
-.hero {
-    height: 778px;
+.body__calender-img{
+    width: 441.53px;
+    height: 100%;
+}
+
+.body__calender-description{
+    width: 601px;
+    height: 308px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.body__calender-button{
+    width: 151px;
+    height: 52px;
+}
+
+.body__customers{
     width: 100%;
+    height: 390px;
     display: flex;
-    flex-direction: row;
-    padding: 0 100px;
+    gap: 78px;
+    align-items: center;
+    justify-content: center;
 }
 
-.hero__bar {
-    width: 820px;
-    display: flex;
+.body__customers-img{
+    width: 326px;
+    height: 326px;
+    border-radius: 8px;
+    box-shadow: 8px;
 }
 
-.hero__img {
-    width: 694px;
-    height: 100%;
-    object-fit: cover;
+.body__customers-description{
+    width: 748px;
+    height: 324px;
     display: flex;
-    flex-direction: row;
+    gap: 32px;
 }
 
-.hero__description {
-    width: 660px;
-    height: 100%;
-    display: flex;
-    gap: 70px;
-    width: 660px;
-    height: 100%;
-}
-
-.hero__title{
+.body__customers-about{
     width: 100%;
-    font-size: 200px;
+    height: 244px;
     display: flex;
-    line-height: 90%;
-    letter-spacing: -3%;
-    color: white;   
-}
-
-.hero__portal{
-    width: 160px;
-    height: 160px;
+    flex-direction: column;
+    gap: 16px;
 }
