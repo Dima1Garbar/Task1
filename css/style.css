@@ -283,7 +283,7 @@ body{
 }
 
 .home__clients-text{
-    width: 1110px;
+    width: 100%;
     height: 24px;
     text-align: center;
 }
@@ -307,7 +307,7 @@ body{
 }
 
 .home__community-title{
-    width: 543px;
+    max-width: 543px;
     height: 88px;
     text-align: center;
 }
@@ -489,6 +489,7 @@ body{
 .body__calendar-button{
     width: 151px;
     height: 52px;
+    min-height: 52px;
 }
 
 .body__customers{
@@ -501,11 +502,8 @@ body{
 }
 
 .body__customers-img{
-    display: block;
-    height: auto;     
-    width: 100%;
-    max-width: 326px; 
-    max-height: 326px;
+    width: 326px;
+    height: 326px;
     border-radius: 8px;
 }
 
@@ -866,7 +864,7 @@ body{
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
 
     .header__nav{
         justify-content: space-around;
@@ -926,6 +924,11 @@ body{
         height: auto;
     }
 
+    .body__customers-img{
+        width: 70%;
+        height: auto;
+    }
+
     .home__hero-content{
         width: 100%;
         height: auto;
@@ -973,11 +976,19 @@ body{
         object-fit: contain;
     }
 
+    .home__community{
+        height: auto;
+    }
+
     .home__community-info{
         height: auto;
         gap: 10px;
     }
-    
+
+    .home__community-title{
+        height: auto;
+        margin-bottom: 10px;
+    }
     .home__community-partner-first{
         height: auto;
     }
@@ -988,6 +999,7 @@ body{
         max-width: 300px;
         padding: 16px;
         min-height: 240px;
+        height: auto;
     }
     .home__community-partner-icon{
         width: auto;
@@ -1015,7 +1027,7 @@ body{
     .body__head-img{
         position: static;
         height: auto;
-        max-width: 300px;
+        max-width: 50%;
         height: auto;     
         width: 100%;
         }
@@ -1023,6 +1035,7 @@ body{
     .body__head-content{
         position: static;
         max-width: 551px;
+        width: 100%;
         height: auto;
         align-items: center;
         gap: 16px;
@@ -1043,8 +1056,12 @@ body{
     }
 
     .u-title{
-        font-size: 26px;
+        font-size: 28px;
         line-height: 36px;
+    }
+
+    .u-text{
+        font-size: 16px;
     }
 
     .body__achievements{
@@ -1118,6 +1135,7 @@ body{
 
     .body__customers-about{
         height: 100%;
+        padding: 5px 10px;
     }
 
     .body__customers-text{
@@ -1127,35 +1145,136 @@ body{
     .body__customers-footer{
         width: 100%;
         height: auto;
-
+        gap: 0;
+        justify-content: space-around;
     }
 
     .body__customers-name{
         font-size: 24px;
         text-align: center;
     }
+    .body__customers-logos{
+        width: 70%;
+        gap: 0;
+        justify-content: space-around;
+    }
     .body__customers-subtitle{
         text-align: center;
     }
     .body__customers-arrow{
-        
+        font-size: 16px;
+    }
+    .body__community{
+        height: auto;
+        padding: 0 20px;
+    }
+
+    .body__community-offers{
+        height: auto;
+        gap: 10px;
+    }
+    .body__community-item{
+        width: 100%;
+        max-width: 368px;
+        position: static;
+    }
+    .body__community-content{
+        width: 100%;
+        position: static;
+        background: none;
+        transform: none;
+    }
+    .body__community-about{
+        width: 70%;
+        min-height: 84px;
+        height: auto;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+    }
+
+    .body__community-img{
+        height: auto;
+    }
+    .body__community-arrow{
+        width: 100%;
+        height: auto;
+        font-size: 17px;
+    }
+
+    .footer__bonus{
+        margin-top: 42px;
+    }
+
+    .footer__bonus-title{
+        width: 100%;
+        height: auto;
+    }
+    .footer__about{
+        height: auto;
+        gap: 16px;
+        padding: 10px 10px;
+    }
+    .footer__about-company{
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+    .footer__about-links{
+        width: 100%;
+        height: auto;
+        gap: 24px;
+    }
+    .footer__about-logo{
+        width: 100%;
+    }
+    .footer__about-company-copyright{
+        width: 100%;
+    }
+    .footer__about-links-column{
+        width: 100%;
+        gap: 12px;
+        height: auto;
+    }
+    .footer__about-links-contact{
+        width: 100%;
+    }
+    .footer__about-links-label{
+        width: 100%;
+    }
+    .body__community-header{
+        max-width: 1110px;
+        width: 100%;
+    }
+
+    .body__community-text{
+        width: 100%;
+        max-width: 628px;
+    }
+
+    .home__clients-content{
+        width: 100%;
+    }
+    .footer__about-links-title{
+        font-size: 18px;
+    }
+    .footer__links-syle{
+        font-size: 14px;
+    }
+    .body__calendar-img{
+        max-width: 70%;
+    }
+    .footer__bonus{
+        height: auto;
     }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 720px) {
+@media (max-width: 770px) {
+    .u-title{
+        font-size: 20px;
+        line-height: 24px;
+    }
     .header__nav {
         flex-direction: column; 
         padding: 16px;
@@ -1234,4 +1353,223 @@ body{
         width: auto;
         padding: 0 20px;
     }
+
+    .home__hero{
+        flex-direction: column;
+    }
+    .home__hero-illustration{
+        width: 100%;
+        height: auto;
+        max-width: 60%;
+    }
+
+    .home__hero-content{
+        order: 1;
+    }
+
+    .home__community-info{
+        flex-direction: column;
+        gap: 32px;
+        padding: 0 40px;
+    }
+
+    .home__community-partner{
+        max-width: 100%;
+        width: 100%;
+        border-radius: 8px;
+        justify-content: center;
+    }
+    .body__head{
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .body__head-img{
+        width: 100%;
+        height: auto;
+        max-width: 80%;
+    }
+    .body__customers-footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    .body__customers-logos{
+        width: 100%;
+    }
+    .body__customers-arrow{
+        font-size: 18px;
+    }
+   .body__community-offers{
+        flex-direction: column;
+        align-items: center;
+   }
+   .body__community-item{
+        max-width: 100%;
+        align-items: center;
+        height: auto;
+   }
+   .body__community-img{
+        max-width: 70%;
+   }
+   .body__community-about{
+        min-height: auto;
+        justify-content: center;        
+   }
+   .body__community-content{
+        height: auto;
+        gap: 8px;
+        padding: 16px 0;
+   }
+   .footer__bonus-title{
+        font-size: 24px;
+        line-height: 36px;
+   }
+   .footer__bonus{
+        margin-top: 0;
+        gap: 8px;
+        padding: 20px 0;
+   }
+   .footer__bonus-button{
+        width: 140px;
+        height: 42px;
+        font-size: 14px;
+   }
+   .footer__about{
+        flex-direction: column;
+        align-items: center ;
+        padding: 10px 40px;
+   }
+   .footer__about-company{
+        max-width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+    }
+    .footer__about-logo{
+        width: 100;
+        display: flex;
+        justify-content: center;
+    }
+    .footer__about-title{
+        width: auto;
+    }
+    .footer__about-company-copyright{
+        flex-direction: row;
+        justify-content: center;
+        height: auto;
+        gap: 30px;
+    }
+    .footer__about-company-copyright-title{
+        width: auto;
+        height: auto;
+    }
+    .footer__about-company-text{
+        width: auto;
+    }
+    .footer__about-links{
+        flex-wrap: wrap;
+    }
+    .footer__about-links-column{
+        width: 40%;
+        text-align: center;
+    }
+    .footer__about-links-contact{
+        height: auto;
+        gap: 16px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .home__hero-content{
+        gap: 8px;
+    }
+    .home__hero-title{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .u-subtitle{
+        font-size: 12px;
+    }
+  
+    .u-button{
+        height: 40px;
+    }
+    .u-title{
+        font-size: 24px;
+    }
+    .u-logo{
+        max-width: 40px;
+        max-height: 40px;
+    }
+    .home__clients-logos{
+        gap: 10px;
+        padding: 0 10px;
+    }
+    .body__achievements-box{
+        width: auto;
+    }
+    .body__achievements-icon{
+        width: auto;
+        height: auto;
+    }
+    .body__achievements-value{
+        font-size: 16px;
+    }
+    .body__achievements-service{
+        font-size: 12px;
+    }
+    .footer__about-title{
+        font-size: 20px;
+    }
+    .footer__about-img{
+        width: 30px;
+        height: auto;
+        object-fit: contain;
+    }
+    .footer__about-company-copyright-title{
+
+    }
+}
+
+
+
+@media (max-width: 360px) {
+    .header__logo-img{
+        width: 35px;
+        height: 30px;
+    }
+    .header__logo-title{
+        font-size: 20px;
+    }
+    .header__login{
+        margin-top: 10px;
+    }
+    .header__login-button{
+        font-size: 16px;
+    }
+    .header__menu-item{
+        height: auto;
+    }
+    .header__menu-link{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .home__clients{
+        padding: 0 20px;
+    }
+    .body__achievements{
+        padding: 0 20px;
+    }
+    .body__achievements-icon{
+        width: 32px;
+        height: 32px;
+    }
+    .body__achievements-row{
+        gap: 20px;
+    }
+
 }
