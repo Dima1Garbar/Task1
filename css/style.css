@@ -1,14 +1,16 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+
 body{
-    background-color: white;
+    background-color: #F5F7FA;
     font-family: 'Inter', sans-serif;
 }
 
-.text--style{
+.u-text{
     font-size: 14px;
     line-height: 20px;
     color: #717171;
@@ -63,7 +65,7 @@ body{
 .header__login-button{
     font-size: 14px;
     line-height: 20px;
-    height: 44px;
+    height: 100%;
 }
 
 .header__logo-img{
@@ -82,14 +84,14 @@ body{
 }
 
 
-
 .home__community-partner{
     width: 299px;
     display: flex;
     gap: 8px;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding: 32px 24px;
+    background-color: white;
 }
 
 .home__community-partner-logo{
@@ -128,6 +130,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    align-items: center;
 }
 
 .header__logo {
@@ -147,7 +150,7 @@ body{
 
 .header__menu{
     height: 24px;
-    width: 588px;
+    max-width: 588px;
     display: flex;
     gap: 50px;
     list-style-type: none;
@@ -192,8 +195,10 @@ body{
 
 
 
-.home{
-    width: 1440px;
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -208,7 +213,7 @@ body{
     align-items: center;
 }
 
-.home__hero-description{
+.home__hero-content{
     width: 657px;
     height: 276px;
     display: flex;
@@ -318,23 +323,25 @@ body{
     height: 280px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    padding: 0 10px;
 }
 
-.home__community-partner--first{
+.home__community-partner-first{
     height: 260px;
 }
 
-.home__community-partner--second{
+.home__community-partner-second{
     height: 280px;
 }
 
 .body{
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     margin-top: 41.8px;
     display: flex;
     gap: 48px;
     flex-direction: column;
-
 }
 
 .body__head{
@@ -344,8 +351,8 @@ body{
 }
 
 .body__head-img{
-    width: 441.53px;
-    height: 328.99px;
+    max-width: 441px;
+    height: 328px;
     position: absolute;
     top: 52px;
     left: 218.5px;
@@ -363,7 +370,7 @@ body{
 }
 
 .body__head-about{
-    width: 601px;
+    width: 100%;
     height: 184px;
     display: flex;
     flex-direction: column;
@@ -376,7 +383,7 @@ body{
 }
 
 .body__head-text{
-    width: 601px;
+    width: 100%;
     height: 80px;
 }
 
@@ -455,8 +462,10 @@ body{
 }
 
 .body__calendar-img{
-    width: 441.53px;
-    height: 100%;
+    height: auto;     
+    width: 100%;
+    max-width: 441px; 
+    display: block;
 }
 
 .body__calendar-title{
@@ -492,8 +501,11 @@ body{
 }
 
 .body__customers-img{
-    width: 326px;
-    height: 326px;
+    display: block;
+    height: auto;     
+    width: 100%;
+    max-width: 326px; 
+    max-height: 326px;
     border-radius: 8px;
 }
 
@@ -634,7 +646,8 @@ body{
 
 
 .footer{
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
 }
 
 .footer__bonus{
@@ -850,4 +863,375 @@ body{
     border: none;
     background-color: transparent;
     cursor: pointer;    
+}
+
+
+@media (max-width: 1024px) {
+
+    .header__nav{
+        justify-content: space-around;
+        align-items: center;
+        height: 54px;
+    }
+
+    .header__logo{
+        width: 120px;
+    }
+
+    .header__logo-img{
+        width: 25px;
+        height: 14px;
+    }
+
+    .header__logo-title {
+        font-size: 18px; 
+    }
+
+    .header__menu {
+        gap: 30px;
+    }
+
+    .header__menu-link{
+        font-size: 14px;
+    }
+
+    .header__login {
+        gap: 8px;
+        height: 34px;
+        width: auto;
+    }
+
+    .header__login-button{
+        font-size: 14px;
+    }
+
+    .header__login-signin{
+        width: 54px;
+    }
+
+    .header__login-signup{
+        width: 54px;
+    }
+
+    .home__hero{
+        height: auto;
+        margin-top: 50px;
+        gap: 40px;
+        padding: 0 40px ;
+
+    }
+
+    .home__hero-illustration{
+        width: 250px;
+        height: auto;
+    }
+
+    .home__hero-content{
+        width: 100%;
+        height: auto;
+        gap: 18px;
+        align-items: center;
+    }
+
+    .home__hero-title-block{
+        height: auto;
+        text-align: center;
+    }
+
+    .home__hero-title{
+        font-size: 50px;
+        line-height: 46px;
+    }
+
+    .u-subtitle{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .home__hero-button{
+        height: 50px;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .home__clients-logos{
+        width: 100%;
+        height: auto;
+        justify-content: space-around;
+    }
+
+    .u-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        object-fit: cover;
+    }
+
+    .u-logo img{
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .home__community-info{
+        height: auto;
+        gap: 10px;
+    }
+    
+    .home__community-partner-first{
+        height: auto;
+    }
+    .home__community-partner-second{
+        height: auto;
+    }
+    .home__community-partner{
+        max-width: 300px;
+        padding: 16px;
+        min-height: 240px;
+    }
+    .home__community-partner-icon{
+        width: auto;
+        height: auto;
+        gap: 10px;
+    }
+    .home__community-partner-company{
+        height: auto;
+        width: auto;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .home__community-about{
+        width: auto;
+    }
+
+    .body__head{
+        height: auto;
+        position: static;
+        display: flex;
+        padding: 0 40px;
+    }
+
+    .body__head-img{
+        position: static;
+        height: auto;
+        max-width: 300px;
+        height: auto;     
+        width: 100%;
+        }
+
+    .body__head-content{
+        position: static;
+        max-width: 551px;
+        height: auto;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .body__head-about-title{
+        height: auto;
+        text-align: center;
+    }
+
+    .body__head-about{
+        height: auto;
+    }
+
+    .body__head-text{
+        height: auto;
+        text-align: center;
+    }
+
+    .u-title{
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .body__achievements{
+        height: auto;
+        gap: 32px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .body__achievements-heading{
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+    .body__achievements-title{
+        font-size: 30px;
+        text-align: center;
+    }
+    .body__achievements-counts{
+        width: 100%;
+        height: auto;
+    }
+
+    .body__achievements-row{
+        height: auto;
+        justify-content: center;
+    }
+
+    .body__achievements-box{
+        width: 200px;
+        height: auto;
+    }
+    .body__achievements-details{
+        width: auto;
+        height: auto;
+    }
+
+    .body__calendar{
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+    }
+    .body__calendar-content{
+        width: 100%;
+        height: auto;
+        gap: 16px;
+        align-items: center;
+    }
+    .body__calendar-title{
+        height: auto;
+        text-align: center;
+    }
+
+    .body__calendar-text{
+        height: auto;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .body__customers{
+        height: auto;
+        gap: 16px;
+        flex-direction: column;
+    }
+    .body__customers-content{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+
+    }
+
+    .body__customers-about{
+        height: 100%;
+    }
+
+    .body__customers-text{
+        height: auto;
+        text-align: center;
+    }
+    .body__customers-footer{
+        width: 100%;
+        height: auto;
+
+    }
+
+    .body__customers-name{
+        font-size: 24px;
+        text-align: center;
+    }
+    .body__customers-subtitle{
+        text-align: center;
+    }
+    .body__customers-arrow{
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 720px) {
+    .header__nav {
+        flex-direction: column; 
+        padding: 16px;
+        height: auto;
+    }
+
+    .header__logo {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__logo-img {
+        width: 50px;
+        height: 40px;
+        object-fit:contain;
+    }
+
+    .header__logo-title {
+        font-size: 25px;
+        }
+
+    .header__menu {
+        display: flex;
+        order: 1;
+        flex-direction: column; 
+        align-items: center;
+        gap: 5px;
+        width: 100%;
+        margin-top: 16px;
+        height: auto;
+    }
+
+    .header__menu-item{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+    }
+
+    .header__menu-link {
+        text-align: center;
+        display: block;
+        font-size: 25px;
+        width: 100%;
+        height: 100%;
+        background-color: #4CAF4F;
+        border-radius: 4px;
+        cursor: pointer;
+        border: none;
+        color: white;
+        line-height: 40px;
+    }
+
+    .header__login {
+        gap: 10px;
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+        justify-content: space-around;
+    }
+
+    .header__login-button {
+        width: 100%;
+        font-size: 26px;
+    }
+
+    .header__login-signin{
+        width: auto;
+    }
+    .header__login-signup {
+        width: auto;
+        padding: 0 20px;
+    }
 }
