@@ -270,6 +270,8 @@ body.dark {
     font-size: 16px;
 }
 
+
+
 .home__hero-illustration{
     width: 391px;
     height: 407px;
@@ -869,8 +871,7 @@ body.dark {
     padding: 0 8px;
 }
 
-.footer__about-links-email{
-    flex: 1;
+.u-input{
     height: 100%;
     border: none;
     background: transparent;
@@ -890,8 +891,117 @@ body.dark {
     background-color: transparent;
     cursor: pointer;    
 }
+.footer__about-input{
+    max-width: 90%;
+    width: 100%;
+}
 
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.5);
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    z-index: 1000;
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__content{
+    background-color: var(--bg-color);
+    max-width: 60%;
+    width: 100%;
+    min-height: 70vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 30px 15px;
+}
+
+.modal__form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.modal__label{
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    gap: 8px;
+    height: 40px;
+}
+.modal__label-text{
+    display: grid;
+    place-items: center;   
+    font-size: 16px;
+    width: 100%;
+    max-width: 100px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    color: var(--bg-color);
+    height: 100%;
+    background-color: var(--title-color);
+}
+.modal__label-input{
+    background-color: #757474;
+    border-radius: 10px;
+    width: 100%;
+    padding: 0 0 0 10px;
+}
+.modal__actions{
+    width: 50%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.modal__actions-button{
+    width: 100%;
+    max-width: 80px;
+    height: 100%;
+}
+
+.modal__label-eye{
+    background-image: url('https://static.thenounproject.com/png/22249-200.png');
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#modalPassword{
+    max-width: 90%;
+    width: 100%;
+}
+
+.modal__input-wrap{
+    width: 100%;
+    background-color: #757474;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.active-Eye{
+    background-image: url('https://cdn-icons-png.flaticon.com/512/829/829117.png');
+}
 
 @media (max-width: 1100px) {
 
