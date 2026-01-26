@@ -965,6 +965,9 @@ body.dark {
     width: 100%;
     padding: 0 0 0 10px;
 }
+.modal__label-input::placeholder{
+    color: #D9DBE1;
+}
 .modal__actions{
     min-width: 180px;
     width: 50%;
