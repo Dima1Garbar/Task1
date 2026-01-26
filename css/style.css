@@ -909,6 +909,7 @@ body.dark {
     visibility: hidden;
     transition: .3s;
     z-index: 1000;
+    padding: 0 40px;
 }
 
 .modal.active {
@@ -918,9 +919,10 @@ body.dark {
 
 .modal__content{
     background-color: var(--bg-color);
-    max-width: 60%;
     width: 100%;
-    min-height: 70vh;
+    max-width: 600px;
+    height: auto;
+    max-height: 65vh;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -938,6 +940,7 @@ body.dark {
 }
 
 .modal__label{
+    min-width: 285px;
     width: 100%;
     max-width: 50%;
     display: flex;
@@ -963,6 +966,7 @@ body.dark {
     padding: 0 0 0 10px;
 }
 .modal__actions{
+    min-width: 180px;
     width: 50%;
     height: 40px;
     display: flex;
@@ -997,6 +1001,7 @@ body.dark {
     border-radius: 10px;
     display: flex;
     align-items: center;
+
 }
 
 .active-Eye{
@@ -1630,6 +1635,7 @@ body.dark {
         gap: 16px;
         text-align: center;
     }
+
 }
 
 
@@ -1680,14 +1686,23 @@ body.dark {
         height: auto;
         object-fit: contain;
     }
-    .footer__about-company-copyright-title{
-
+    .modal__label{
+        min-width: 225px;
+        max-width: 90%;
+    }
+    .modal__label-text{
+        font-size: 14px;
+        width: 92px;
+        padding: 0;
+    }
+    .modal__label-input{
+        font-size: 14px;
     }
 }
 
 
 
-@media (max-width: 360px) {
+@media (max-width: 370px) {
     .header__logo-img{
         width: 35px;
         height: 30px;
@@ -1721,5 +1736,16 @@ body.dark {
     .body__achievements-row{
         gap: 20px;
     }
-
+    .modal__label-text{
+        font-size: 12px;
+    }
+    .modal__label-input{
+        font-size: 12px;
+    }
+    .modal__label-input{
+        padding: 0;
+    }
+    .modal__content{
+        min-width: 260px;
+    }
 }
